@@ -11,7 +11,7 @@
 	<groupId>com.krystian</groupId>
 	<artifactId>tasklist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>tasklist</name>
 	<description>Demo project for Spring Boot</description>
 
