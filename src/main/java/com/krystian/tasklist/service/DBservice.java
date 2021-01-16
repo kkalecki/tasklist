@@ -4,6 +4,8 @@ import com.krystian.tasklist.controller.TaskNotFoundException;
 import com.krystian.tasklist.domain.Task;
 import com.krystian.tasklist.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -34,4 +36,6 @@ public class DBservice {
     {
         taskRepository.deleteById(id);
     }
+
+
 }

@@ -6,6 +6,8 @@ import com.krystian.tasklist.domain.TaskDto;
 import com.krystian.tasklist.mapper.TaskMapper;
 import com.krystian.tasklist.service.DBservice;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,5 +53,7 @@ public class TaskController {
     public void createTask(@RequestBody TaskDto taskDto) {
         dBservice.saveTask(taskMapper.mapToTask(taskDto));
     }
+
+
 
 }
